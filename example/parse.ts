@@ -1,27 +1,11 @@
 import { parse } from "../src/compiler.js";
 
 console.log(
-  parse(`
+  parse(
+    `
 <template>
   <div id="app">
-    <body v-if="displayedComponent === 'home'">
-      <Home />
-    </body>
-    <body v-else-if="displayedComponent === 'lighthouse'">
-      <Lighthouse />
-    </body>
-    <body v-else-if="displayedComponent === 'travel'">
-      <Travel />
-    </body>
-    <body v-else-if="displayedComponent === 'vue'">
-      <VueJs />
-    </body>
-    <body v-else-if="displayedComponent === 'deno'">
-      <Deno />
-    </body>
-    <body v-else>
-      <h1>Welcome to Your vno Project</h1>
-    </body>
+      <h1 class="header"></h1>
   </div>
 </template>
 
@@ -67,5 +51,7 @@ body {
   justify-content: center;
 }
 </style>
-`, { filename: "App.vue", sourceMap: false,  })
+`,
+    { filename: "App.vue", sourceMap: false }
+  ).descriptor.script.content
 );
