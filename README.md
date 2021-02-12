@@ -47,7 +47,7 @@ The general idea is to generate a facade module that imports the individual bloc
 
 example:
 ```ts
-import { parse } from "./https://deno.land/x/vue_sfc_compiler/mod.ts";
+import { parse } from "https://deno.land/x/vue_sfc_compiler/mod.ts";
 
 
 console.log(parse(`....`)); // component to parse.
