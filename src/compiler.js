@@ -1,5 +1,5 @@
-import postcss from "./postcss/postcss.js";
 import * as path from "https://deno.land/std@0.83.0/path/mod.ts";
+import postcss from "./postcss/postcss.js";
 
 const parse$3 = (url) => new URL(url);
 
