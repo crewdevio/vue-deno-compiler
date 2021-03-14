@@ -1,11 +1,7 @@
-import process from "https://cdn.esm.sh/v15/_process_browser.js";
-
-process.env.NODE_ENV = "production";
-
-import { Buffer } from "https://cdn.esm.sh/v15/_node_buffer.js";
+import { Buffer } from "https://esm.sh/v21/_node_buffer.js";
 import __fs$ from "https://deno.land/std@0.90.0/node/fs.ts";
-import __path_browserify$ from "https://cdn.esm.sh/v15/path-browserify@1.0.1/esnext/path-browserify.js";
-import __url$ from "https://cdn.esm.sh/v15/url@0.11.0/esnext/url.js";
+import __path_browserify$ from "https://esm.sh/v21/path-browserify@1.0.1/esnext/path-browserify.js";
+import __url$ from "https://esm.sh/v21/url@0.11.0/esnext/url.js";
 
 var hn = Object.create,
   Ue = Object.defineProperty,
